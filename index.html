@@ -6,13 +6,15 @@
     <title> Web - Daniel Sánchez Martínez </title>
     <!-- CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mediaQuerys.css">
     <!-- JS -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="jquery/jquery.min.js"></script>
     <!-- FontAwesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg" href="favicon.svg"/>
   </head>
   <body>
 
@@ -29,10 +31,10 @@
               <a class="nav-link active" href="#"><i class="fas fa-laptop px-2"></i></i>Proyectos</a>
             </li>
             <li class="nav-item mx-4">
-              <a class="nav-link active" href=""><i class="far fa-paper-plane px-2"></i>Contacto</a>
+              <a class="nav-link active" href="#about-me"><i class="far fa-user px-1"></i> Sobre mí</a>
             </li>
             <li class="nav-item mx-4">
-              <a class="nav-link active" href="#about-me"><i class="far fa-user px-1"></i> Sobre mí</a>
+              <a class="nav-link active" href="#contact"><i class="far fa-paper-plane px-2"></i>Contacto</a>
             </li>
             <li class="nav-item mx-4">
               <a class="nav-link active" href="#"><i class="far fa-folder-open px-1"></i> Blog</a>
@@ -43,28 +45,31 @@
     </nav>
 
     <!-- TÍTULO Y CAJA DE PRESENTACIÓN -->
-    <header class="text-center pt-5 pb-3 bg-danger">
+    <header class="py-5 row">
 
       <!-- Título y subtítulo -->
-      <h1 class="title">Daniel Sánchez Martínez</h1>
-      <h5 class="subtitle">La web de ayuda informática para quienes la necesiten</h5>
+      <div class="presentation col-5 my-5 p-4 ms-5">
+        <h1 class="title">Daniel Sánchez Martínez</h1>
+        <h5 class="subtitle">Desarrollador Web a tu disposición</h5>
+      </div>
 
       <!-- Tarjeta de presentación -->
-      <div class="profile mx-auto my-5 p-4 shadow">
-        <img src="img/perfil.jpg" class="img-profile my-2">
-        <p>¡Hola! Me llamo Daniel Sánchez Martínez.</p>
-        <p>Realicé mis estudios como desarrollador web en el IES Fleming,
-           y actualmente estoy trabajando para la empresa Intelligent Lumen.</p>
-        <p>Soy un pequeño programador con grandes ideas de cara al futuro.</p>
+      <div class="profile text-center mx-auto my-5 p-4 shadow col-7">
+        <img src="img/perfil.jpg" class="img-profile mt-4 mb-5">
+        <p>¡Hola! Me llamo Dani y me dedico a crear páginas web.</p>
+        <p>Si has llegado hasta aquí es porque estás buscando a alguien que te ayude a crear la tuya
+        </p>
+        <p></p>
       </div>
 
     </header>
 
     <!-- Datos a destacar -->
-    <section class="row mx-auto d-flex justify-content-between py-3">
+    <section class="row mx-auto d-flex justify-content-between">
 
       <div class="skills col-12 col-lg-4 p-4 text-center">
-        <div class="m-2 p-4 ">
+        <div class="m-2 p-4">
+          <h1 class="mb-5"><i class="fas fa-paint-brush"></i></h1>
           <h4 class="my-4">DISEÑO WEB</h4>
           <p>Proporciono un diseño web limpio y atractivo, personalizado y adaptable a
              todos los dispositivos (móviles, tablets, ordenadores...).</p>
@@ -72,93 +77,121 @@
       </div>
 
       <div class="skills col-12 col-lg-4 p-4 text-center">
-        <div class="m-2 p-4 ">
-          <h4 class="my-4">PROGRAMACIÓN</h4>
-          <p>Proporciono un diseño web limpio y atractivo, personalizado y adaptable a
-             todos los dispositivos (móviles, tablets, ordenadores...).</p>
+        <div class="m-2 p-4">
+          <h1 class="mb-5"><i class="fas fa-laptop"></i></h1>
+          <h4 class="my-4">DESARROLLO WEB</h4>
+          <p>Personalizo tu web en función de lo que necesites, siempre atento
+             a cambios y modificaciones para mantenerla actualizada.
+          </p>
         </div>
       </div>
 
       <div class="skills col-12 col-lg-4 p-4 text-center">
-        <div class="m-2 p-4 ">
-          <h4 class="my-4">POSICIONAMIENTO</h4>
-          <p>Proporciono un diseño web limpio y atractivo, personalizado y adaptable a
-             todos los dispositivos (móviles, tablets, ordenadores...).</p>
+        <div class="m-2 p-4">
+          <h1 class="mb-5"><i class="fas fa-search"></i></i></h1>
+          <h4 class="my-4">POSICIONAMIENTO WEB</h4>
+          <p>Mejoro y aumento tus apariciones en Google, ofreciendo dos 
+            características importantes: optimización y calidad.</p>
         </div>
       </div>
 
     </section>
 
 
-    <main class="main my-5">
+    <main class="main my-5"> 
 
-      <section id="about-me" class="about container row px-5 justify-content-around mx-auto align-items-center my-5 py-5">
+      <section id="about-me" class="about row px-lg-5 justify-content-around mx-auto align-items-center my-5 py-5">
 
         <!-- Historia - Texto -->
-        <div class="about-text col-6 px-3">
+        <div class="about-text col-12 col-lg-6 px-3 container">
 
-          <h2 class="mb-3 pb-2">Mi historia</h2>
+          <h2 class="mb-3 pb-2">Me presento al mundo</h2>
 
           <p>Mi nombre es Daniel, y vivo en Oviedo, Asturias.
              Realicé mis estudios de Bachillerato en 2018, y en cuanto acabé, supe
              exactamente dónde ir.
              Siempre quise estudiar y dedicarme a la <b>informática</b>, y la mejor opción
-             que encontré fue aprender a hacer <b>aplicaciones web</b> en un grado superior.</p>
+             que encontré fue aprender a hacer <b>aplicaciones web</b> en un grado superior.
+          </p>
 
-          <p>Ahora soy <b>programador web</b> desde hace unos meses, pero quiero seguir aprendiendo
-             y practicando todo lo posible.</p>
+          <p>Soy <b>programador web</b> desde hace un año, pero quiero seguir aprendiendo
+             y practicando todo lo posible.
+          </p>
+
+          <p>Mi otro sueño era ser músico, concretamente batería, así que también estoy 
+             estudiando percusión en el Conservatorio Superior de Música de Oviedo.
+          </p>
 
           <p>Personalmente, la informática es un campo que recomiendo encarecidamente,
              no solo por las salidas laborales que tiene. La recomiendo porque es el presente
              y el futuro. Es algo que va durar mucho mucho tiempo en el mundo, y cuanta más
-             gente la disfrute, más magia veremos a nuestro alrederor.</p>
+             gente la disfrute, más magia veremos a nuestro alrederor.
+          </p>
 
         </div>
 
         <!-- Historia - Imagen -->
-        <div class="about-img col-6 px-3">
+        <div class="about-img col-12 col-lg-6 px-3">
           <img src="img/yo1.jpg" class="shadow">
         </div>
 
-      <section>
-
-      <section id="knowledge" class="knowledge container row px-5 justify-content-around mx-auto align-items-center my-5 py-5">
-
-        <h2 class="text-center b-3 pb-2">Tecnologías con las que trabajo</h2>
-
-        <div class="icons d-flex align-content-center justify-content-around mt-5">
-
-          <div class="icon text-center">
-            <img src="icons/html.svg" class="mb-2" width="40%">
-            <p>HTML</p>
-          </div>
-
-          <div class="icon text-center">
-            <img src="icons/css.svg" class="mb-2" width="40%">
-            <p>CSS</p>
-          </div>
-
-        </div>
-
-
-      <section>
+      </section>
 
     </main>
 
+    <!-- Formulario de contacto -->
+    <section id="contact" class="contact">
+      <div class="container py-5">
+        <h3 class="text-center mb-5">¡Estoy a tu disposición!</h3>
+        <form class="form row justify-content-center">
+
+          <div class="mb-3 col-12 col-lg-4">
+            <label for="nombre" class="form-label">Nombre y Apellidos:</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+
+          <div class="mb-3 col-12 col-lg-4">
+            <label for="correo" class="form-label">Correo electrónico:</label>
+            <input type="email" class="form-control" id="correo">
+          </div>
+
+          <div class="form-floating col-12 col-lg-8">
+            <textarea class="form-control" placeholder="Leave a comment here" id="mensaje" style="height:10rem"></textarea>
+            <label for="mensaje" class="px-4">Cuéntame lo que necesites</label>
+          </div>
+
+          <button type="submit" class="btn btn-outline-primary btn-send my-3">¡Dame un toque!</button>
+        </form>
+      </div>
+    </section>
 
 
-
-
+    <!-- Sección de relleno -->
+    <section class="fill text-center">
+      <p>Daniel SM</p>
+    </section>
 
 
     <!-- PIE DE PÁGINA -->
     <footer class="footer mt-auto py-3 bg-dark">
-      <div class="container row text-light py-3">
+      <div class="container row text-light py-3 mx-auto">
 
-        <div class="footer-contact text-light">
-          <h5 class="mb-3">Contacto</h5>
+        <div class="footer-contact text-light col-4">
+          <h5 class="mb-4">P onte en contacto</h5>
           <p><i class="fas fa-phone pe-1"></i> (+34) 684 634 081</p>
           <p><i class="fas fa-envelope pe-1"></i> danielsanmar@gmail.com</p>
+        </div>
+
+        <div class="footer-contact text-light col-4 text-center">
+          <h5 class="mb-4">Páginas de interés</h5>
+          <p><i class="fas fa-laptop px-2"></i></i>Proyectos</p>
+          <p><i class="far fa-folder-open px-1"></i> Blog</p>
+        </div>
+
+        <div class="footer-contact text-light col-4 text-end">
+          <h5 class="mb-4">Mis redes sociales</h5>
+          <p class="social"><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram </a></p>
+          <p class="social"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i> Linkedin </a></p>
         </div>
 
       </div>
@@ -167,3 +200,6 @@
 
   </body>
 </html>
+
+
+

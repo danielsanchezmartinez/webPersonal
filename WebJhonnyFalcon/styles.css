@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+*::selection {
+    background: transparent;
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    font-family: 'Antonio';
+    letter-spacing: 1.5px;
+    background-color: #0a0a0a90 !important;
+    height: 10%;
+    z-index: 20;
+}
+
+.navbar-brand{
+    letter-spacing: 5px;
+}
+
+.nav-link{
+    margin-left: 3rem;
+    transition: 0.2s;
+}
+
+.nav-link:hover{
+    color: rgb(238, 238, 128) !important;
+    transition: 0.2s;
+}
+
+
+header{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    ),
+    url("jhonny.jpg");
+    color: white;
+}
+
+header h1{
+    width: 50%;
+    font-family: 'Antonio';
+    font-weight: 600;
+    font-size: 400%;
+    padding-top: 15rem;
+    padding-left: 5rem;
+}
+
+.especialidades{
+    height: 100%;
+}
+
+.trabajos{
+    font-size: 120%;
+    padding: 1rem;
+    padding-top: 3rem;
+    background-color: #0a0a0a;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.trabajos:hover{
+    transition: 0.8s !important;
+    background-color: #161616;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.trabajos:hover i{
+    color: rgb(238, 238, 128);
+    transform-origin: 20% 40%;
+    transform: rotate(1turn);
+    transition: 1s;
+}
+
+
+.trabajos i{
+    margin-bottom: 1.5rem; 
+    font-size: 200%;
+}
+
+.trabajos p{
+    font-family: 'Roboto';
+    width: 70%;
+    margin: auto;
+}
+
+.trabajos h3{
+    font-family: 'Antonio';
+}
+
+
+.contact-section{
+    padding: 6rem 6rem;
+    height: 100%;
+}
+
+.contact-text{
+    padding-left: 6rem;
+    font-family: 'Roboto';
+}
+
+.contact-text h5{
+    font-family: 'Antonio';
+}
+
+
+
+.contact{
+    border-right: 2px solid #000000;
+    padding-right: 5rem;
+}
+
+.contact h3{
+    font-family: 'Antonio';
+    margin-bottom: 4rem;
+}
+
+.contact .form-group{
+    font-family: 'Antonio';
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact .form-group input{
+    font-family: 'Roboto';
+    border: 0px solid transparent !important;
+    border-bottom: 2px solid #000000 !important;
+    border-radius: 0px !important;
+    transition: 0.3s;
+    width: 60%;
+}
+
+.contact .form-group input:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid #161616 !important;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.contact button{
+    margin-top: 2rem;
+    width: 12rem;
+    border-radius: 0px !important;
+    border: 2px solid #161616;
+    color: #161616;
+    background-color: white;
+    font-weight: 600;
+}
+
+.contact button:hover, .contact button:active, .contact button:focus{
+    border: 2px solid #161616;
+    color: white;
+    background-color: #161616;
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+.background{
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("background1.jpg");
+    color: white;
+    font-family: 'Antonio';
+
+}
+
+.background h5{
+    height: 10%;
+    font-size: 500%;
+    text-align: center;
+    padding-top: 6rem;
+    letter-spacing: -0.2px;
+}
+
+.background div{
+    font-family: 'Roboto';
+    height: 10rem;
+    text-align: justify;
+}
+
+.background div p{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(238, 238, 128);
+  }
