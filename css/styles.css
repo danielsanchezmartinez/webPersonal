@@ -18,7 +18,7 @@
   --font-xxl: 350%;
   --font-xl: 200%;
   --font-l: 150%;
-  --font-m: 120%;
+  --font-m: 110%;
   --font-s: 100%;
   --font-xs: 90%;
 
@@ -74,6 +74,19 @@ header{
   background-attachment: fixed;
   background-size: 100%;
 }
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active{
+  border: 0px solid transparent !important;
+  outline: none !important;
+  color: transparent !important;
+}
+.navbar-toggler-icon{
+  color: var(--color-white) !important;
+  transition: var(--transition-fast);
+}
+.navbar-toggler-icon:hover{
+  color: var(--color-primary) !important;
+  transition: var(--transition-fast);
+}
 .navbar{
   background-color: var(--color-dark) !important;
 }
@@ -98,12 +111,10 @@ header{
   font-weight: var(--font-wmax);
   font-size: var(--font-xxl) !important;
 }
-
 .subtitle{
   font-size: var(--font-l) !important;
   margin-left: 2px;
 }
-
 .profile{
   background: #12121290;
   color: var(--color-white);
@@ -146,7 +157,7 @@ header{
   font-family: var(--font-work);
   font-weight: var(--font-wmax);
   border-bottom: 2px solid var(--color-primary);
-  width: 50%;
+  width: 80%;
 }
 
 .about-text p{

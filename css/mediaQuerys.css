@@ -1,8 +1,26 @@
-
+/********************************************/
+/** MÓVILES                                **/
+/********************************************/
 @media only screen and (max-width: 768px) {
 
   p{
     font-size: 120%;
+  }
+
+  header{
+    background-size: 300% !important;
+  }
+
+  .fill{
+    background-size: 500% !important;
+    height: 20rem;
+  }
+
+  .fill p{
+    padding-left: 3rem;
+    padding-right: 3.8rem;
+    font-size: 600%;
+    padding-top: 1rem;
   }
 
   .profile{
@@ -11,14 +29,30 @@
 
 }
 
-@media (min-width: 769px) {
+/********************************************/
+/** MÓVILES EN HORIZONTAL                  **/
+/********************************************/
+@media (min-width: 630px) {
+  .fill{
+    height: 20rem;
+  }
+
+  .fill p{
+    padding-top: 6rem;
+  }
 
 }
 
+/********************************************/
+/** TABLETS                                **/
+/********************************************/
 @media (min-width: 992px) {
 
 }
 
+/********************************************/
+/** PORTÁTILES                             **/
+/********************************************/
 @media (min-width: 1200px) {
 
   p{
